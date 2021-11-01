@@ -1,0 +1,86 @@
+<div class="container">
+  <div class="row">
+    <div class="col-12">
+      <form [formGroup]="signupForm" (ngSubmit)="onSubmit()">
+        <div class="row">
+          <div class="col-12" formArrayName="collegedetails">
+            <label for="Education">Education</label>
+            <div
+              class="row mt-2"
+              *ngFor="let collegesCtrl of collegesControls; let i = index"
+              [formGroupName]="i"
+            >
+              <div class="col-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="degree"
+                  placeholder="Degree,Diploma,X..."
+                />
+              </div>
+              <div class="col-3">
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="college"
+                  placeholder="College or School Name"
+                />
+              </div>
+              <div class="col-4">
+                <div class="row">
+                  <div class="col-6">
+                    <input
+                      type="text"
+                      placeholder="From Date"
+                      class="form-control"
+                      formControlName="fdate"
+                      bsDatepicker
+                    />
+                  </div>
+                  <div class="col-6">
+                    <input
+                      type="text"
+                      placeholder="To Date"
+                      class="form-control"
+                      formControlName="tdate"
+                      bsDatepicker
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="col-1 p-0">
+                <input
+                  type="text"
+                  class="form-control"
+                  formControlName="percentage"
+                  placeholder="%"
+                />
+              </div>
+              <div class="col-1">
+                <button
+                  class="btn btn-danger"
+                  type="button"
+                  (click)="onDeleteEductionDetails(i)"
+                >
+                  X
+                </button>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <button
+                  class="btn btn-success"
+                  type="button"
+                  (click)="onAddEductionDetails()"
+                >
+                  Add Education Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button class="btn btn-success" type="submit">Submit</button>
+      </form>
+    </div>
+  </div>
+</div>

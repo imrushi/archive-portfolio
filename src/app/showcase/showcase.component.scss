@@ -1,0 +1,34 @@
+$primary: #ffdc22;
+$primary-overlay: rgba(202, 177, 63, 0.8);
+#showcase {
+  position: relative;
+  background: url("../../assets/img/Pikachu.jpg");
+  // background-size: cover;
+  background-attachment: fixed;
+  //   min-height: 600px;
+
+  .shock-left {
+    position: relative;
+    /* left: -130px; */
+    /* top: 80px; */
+    -webkit-transform: rotateZ(140deg);
+    transform: rotateZ(140deg);
+    width: 175px;
+    /* z-index: 10; */
+  }
+
+  .primary-overlay {
+    background: $primary-overlay;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.4);
+  }
+
+  .btn-outline-warning:hover {
+    background-color: #f2cf43;
+    background-image: linear-gradient(315deg, #f2cf43 0%, #19a186 74%);
+  }
+}

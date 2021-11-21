@@ -13,6 +13,7 @@ import { CarouselModule } from 'ngx-bootstrap/carousel';
 import { CollapseModule } from 'ngx-bootstrap/collapse';
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { TerminalComponent } from './about/terminal/terminal.component';
 
 @NgModule({
 	declarations: [
@@ -24,7 +25,8 @@ import { FooterComponent } from './footer/footer.component';
 		LanguagesComponent,
 		ProjectsComponent,
 		ContactComponent,
-		FooterComponent
+		FooterComponent,
+  TerminalComponent
 	],
 	imports: [ BrowserModule, BrowserAnimationsModule, CarouselModule.forRoot(), CollapseModule.forRoot() ],
 	providers: [],

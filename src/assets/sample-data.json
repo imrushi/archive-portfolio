@@ -1,0 +1,73 @@
+{
+    "homeAbout": "<p class='lead'>I am <span class='teal-head'><b><i> Fullstack Devloper</i></b></span> and I love to<span class='teal-head'><b><i> code</i></b></span> and stay up to date about technologies and I'm passionate about what I do.</p>",
+    "socialLinks": {
+        "facebook": "https://www.facebook.com/rushi.panchariya",
+        "github": "https://github.com/imrushi",
+        "linkedin": "https://www.linkedin.com/in/rushi-panchariya",
+        "twitter": "https://twitter.com/RushiPanchariya"
+    },
+    "aboutMe": "<p> Hi, I'm Rushi Panchariya, I'm <strong>Full stack Developer</strong> + i love work on <strong>Project & Ideas</strong> + loves <strong>challenging</strong> assignments. </p> <p> I'm fascinated in Cloud, IoT, Open-source & also like new Programming languages, New Techologies. I like to play Games with my friends, it gives me stress relief & sometimes I stream on <a href='https://www.youtube.com/ReXOfficial' class='teal-head' target='_blank' >YouTube</a > or <a href='https://www.twitch.tv/imrealrex' class='teal-head' target='_blank' >Twitch</a >. While coding, I enjoy listening to music and producing EDM in my spare time. </p> <p> My Life is <strong>LEARN</strong> + <strong>CODE</strong> + <strong>GAMING</strong> + <strong>WATCH</strong> (<strong> SERIES, MOVIES, ANIME </strong >)+<strong>Fitness</strong> </p> <h4 class='teal-head'>EDUCATION</h4> <p> Bachelor of engineering in Computer Engineering, from <strong>Pune University</strong>, in 2021. </p>",
+    "experiance": "<ul><li><div class='row'><div class='col-md-4'><h5 class='teal-head'>Jr. Research Engineer</h5><p><strong><i>ESDS Software Solution LTD.</i></strong><br/><strong><i>April 2021 - Present</i></strong><br/>I have been working different POC's in Research. I have worked on : <br/></p><ul><li>Angular: Face Detection on Frontend</li><li>OAuth2 and OpenID: Implementation of Authorization Grant Flow and Client Credential Flow using <a href='https://github.com/ory/hydra'><strong>ORY Hydra</strong></a></li><li>Golang: Custom plugin for Telegraf,<br/> REST API's to Pefrom Operations on PDF,<br/> REST API's to Perfrom CRUD operation on VMware vSphere using <a href='https://github.com/vmware/govmomi'><strong>Govmomi</strong></a></li><li>Kubernetes: Kubernetes Ingress Controller(Nginx,Haproxy),OpenWhisk Functions</li><li>Docker</li></ul></div><div class='col-md-4'><hr class='hr-white'/></div><div class='col-md-4'><h5 class='teal-head'>Research Trainee</h5><p><strong><i>ESDS Software Solution LTD.</i></strong><br/><strong><i>Sep 2020 - March 2021</i></strong><br/>As a Trainee, I have worked on : <br /></p><ul><li>Flutter : Video Conferance App like Zoom</li><li>Electron Js</li><li>Active Directory: API for AD using LDAP</li></ul></div></div></li></ul>",
+    "langImg": [
+        "html5",
+        "css",
+        "typescript",
+        "javascript",
+        "golang",
+        "c++",
+        "python",
+        "java"
+    ],
+    "langName": [
+        "HTML",
+        "CSS",
+        "TypeScript",
+        "JavaScript",
+        "Golang",
+        "C++",
+        "PYTHON",
+        "JAVA"
+    ],
+    "toolsnTechnologiesImg": [
+        "Angular1.png",
+        "Bootstrap1.png",
+        "Vscode1.png",
+        "git.png",
+        "Flutter1.png",
+        "Github1.png",
+        "Mysql1.png",
+        "Android1.png"
+    ],
+    "toolsnTechnologies": [
+        "Angular",
+        "Bootstrap",
+        "VScode",
+        "Git",
+        "Flutter",
+        "Github",
+        "MySql",
+        "Android"
+    ],
+    "projects": [
+        {
+            "projectName": "Shopey",
+            "description": "It's a project that allows you to rapidly write down what's on your mind and make a shopping list. Flutter was used to create it, while Google Firebase was used for the database, hosting, and Google functions. It is currently available on the Google Play Store.",
+            "imgs": [
+                "",
+                ""
+            ],
+            "seeLive": "",
+            "sourceCode": ""
+        },
+        {
+            "projectName": "Smart Meter",
+            "description": "Developing a smart meter (Non-invasive) which takes reading of power. Using that data we are further implementing regression for prediction and classification for classifying appliances used.",
+            "imgs": [
+                "",
+                ""
+            ],
+            "seeLive": "",
+            "sourceCode": ""
+        }
+    ]
+}

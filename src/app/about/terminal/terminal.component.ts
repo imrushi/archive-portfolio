@@ -41,7 +41,7 @@ export class TerminalComponent implements OnInit {
   app = () => {
     this.userInput = document.getElementById("userInput");
     this.terminalOutput = document.getElementById("terminalOutput");
-    document.getElementById("dummyKeyboard").focus();
+    document.getElementById("dummyKeyboard");
     console.log("Application loaded");
   };
 

@@ -13,13 +13,15 @@ export class LanguagesComponent implements OnInit {
 		'Angular1.png',
 		'Bootstrap1.png',
 		'Vscode1.png',
+		'k8s.png',
+		'docker.png',
 		'git.png',
 		'Flutter1.png',
 		'Github1.png',
 		'Mysql1.png',
 		'Android1.png'
 	];
-	toolName = [ 'Angular', 'Bootstrap', 'VScode', "Git",'Flutter', 'Github', 'MySql', 'Android' ];
+	toolName = [ 'Angular', 'Bootstrap', 'VScode','Kubernetes', 'Docker',"Git",'Flutter', 'Github', 'MySql', 'Android' ];
 
 	constructor() {}
 

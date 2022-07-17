@@ -3,33 +3,6 @@
     <div class="container">
       <div class="row">
         <div class="col-md-6">
-          <!-- <div class="fakeMenu">
-            <div class="fakeButtons fakeClose"></div>
-            <div class="fakeButtons fakeMinimize"></div>
-            <div class="fakeButtons fakeZoom"></div>
-          </div>
-          <div class="fakeScreen">
-            <p class="line1 consolep">
-              $ show about-me<span class="cursor1">_</span>
-            </p>
-            <p class="line2 consolep">
-              &#91;&nbsp;&ldquo;I'm a Fullstack developer.&rdquo;,&nbsp;
-            </p>
-            <p class="line2 consolep">
-              &nbsp;&ldquo;I love to make Webapps.&rdquo;,&nbsp;
-            </p>
-            <p class="line2 consolep">
-              &nbsp;&nbsp;&ldquo;Let's work together!&rdquo;&nbsp;&#93;<span
-                class="cursor2"
-                >_</span
-              >
-            </p>
-            <p class="line3 consolep">
-              [?] What more would you like?<span class="cursor3">_</span>
-            </p> -->
-          <!-- <p class="line4 consolep">><input type="text" class="no-border" style="color: white; background-color: #151515;"><span class="cursor4">_</span></p> -->
-          <!-- <p class="line4 consolep">><span class="cursor4">_</span></p>
-          </div> -->
           <app-terminal></app-terminal>
         </div>
         <div class="col-md-6">
@@ -65,78 +38,6 @@
               SERIES, MOVIES, ANIME </strong
             >)+<strong>FITNESS</strong>
           </p>
-          <h4 class="teal-head">EDUCATION</h4>
-          <p>
-            Bachelor of engineering in Computer Engineering, from
-            <a href="http://www.unipune.ac.in/"
-              ><strong>Pune University</strong></a
-            >, in 2021.
-          </p>
-        </div>
-        <div class="col-12">
-          <h4 class="teal-head">BACKGROUND</h4>
-          <hr class="hr-color" />
-          <ul>
-            <li>
-              <div class="row">
-                <div class="col-md-4">
-                  <h5 class="teal-head">Jr. Research Engineer</h5>
-                  <p>
-                    <strong><i>ESDS Software Solution LTD.</i></strong> <br />
-                    <strong><i>April 2021 - Present</i></strong> <br />
-                    I have been working different POC's in Research. I have
-                    worked on :
-                  </p>
-                  <ul>
-                    <li>
-                      <strong>Angular</strong>: Face Detection on Frontend
-                    </li>
-                    <li>
-                      <strong>OAuth2 and OpenID</strong>: Implementation of
-                      Authorization Grant Flow and Client Credential Flow using
-                      <a href="https://github.com/ory/hydra"
-                        ><strong>ORY Hydra</strong></a
-                      >
-                    </li>
-                    <li>
-                      <strong>Golang</strong>: Custom plugin for Telegraf,<br />
-                      REST API's to Pefrom Operations on PDF,<br />
-                      REST API's to Perfrom CRUD operation on VMware vSphere
-                      using
-                      <a href="https://github.com/vmware/govmomi"
-                        ><strong>Govmomi</strong></a
-                      >
-                    </li>
-                    <li>
-                      <strong>Kubernetes</strong>: Kubernetes Ingress
-                      Controller(Nginx,Haproxy), OpenWhisk Functions
-                    </li>
-                    <li><strong>Docker</strong></li>
-                    <li><strong>Serverless</strong></li>
-                  </ul>
-                </div>
-                <div class="col-md-4"><hr class="hr-white" /></div>
-                <div class="col-md-4">
-                  <h5 class="teal-head">Research Trainee</h5>
-                  <p>
-                    <strong><i>ESDS Software Solution LTD.</i></strong> <br />
-                    <strong><i>Sep 2020 - March 2021</i></strong> <br />
-                    As a Trainee, I have worked on :
-                  </p>
-                  <ul>
-                    <li>
-                      <strong>Flutter</strong> : Video Conferance App like Zoom
-                    </li>
-                    <li><strong>Electron Js</strong></li>
-                    <li>
-                      <strong>Active Directory</strong>: API for AD using LDAP
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </li>
-          </ul>
-
           <a
             target="_blank"
             class="btn btn-outline-warning text-white glow-on-hover mt-2"
@@ -144,6 +45,154 @@
           >
             <i class="fa fa-cloud fa-inverse"></i> Download Resume
           </a>
+          <!-- <h4 class="teal-head">EDUCATION</h4> -->
+          <!-- <p>
+            Bachelor of engineering in Computer Engineering, from
+            <a href="http://www.unipune.ac.in/"
+              ><strong>Pune University</strong></a
+            >, in 2021.
+          </p> -->
+        </div>
+        <div class="col-12">
+          <hr class="hr-color" />
+          <h2 class="section__title teal-head text-center">Qualification</h2>
+          <div class="text-center">
+            <span class="section__subtitle">My Personal Journey</span>
+          </div>
+
+          <div class="qualification__contianer container">
+            <div class="qualification__tabs">
+              <div
+                class="qualification__button button--flex"
+                (click)="changeE()"
+                [ngClass]="{ 'teal-head': !edu_work }"
+              >
+                <i class="fa fa-graduation-cap qualification__icon"></i>
+                Eduction
+              </div>
+
+              <div
+                class="qualification__button button--flex"
+                (click)="changeW()"
+                [ngClass]="{ 'teal-head': edu_work }"
+              >
+                <i class="fa fa-briefcase qualification__icon"></i>
+                Work
+              </div>
+            </div>
+
+            <div class="qualification_section">
+              <!--==========Qualification Content========-->
+              <div
+                data-content
+                class="qualification_content"
+                id="eduction"
+                *ngIf="!edu_work"
+              >
+                <!--==========Qualification 1========-->
+                <div class="qualification__data">
+                  <div>
+                    <h3 class="qualification__title">Computer Engineer</h3>
+                    <span class="qualification__subtitle">Pune University</span>
+                    <div class="qualification__calandar">
+                      <i class="fa fa-calendar"></i>
+                      2018 - 2021
+                    </div>
+                  </div>
+
+                  <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                  </div>
+                </div>
+
+                <!--==========Qualification 2========-->
+
+                <div class="qualification__data">
+                  <div></div>
+                  <div>
+                    <span class="qualification__rounder"></span>
+                    <!-- <span class="qualification__line"></span> -->
+                  </div>
+                  <div>
+                    <h3 class="qualification__title">
+                      Computer Engineer - Diploma
+                    </h3>
+                    <span class="qualification__subtitle"
+                      >Mumbai University</span
+                    >
+                    <div class="qualification__calandar">
+                      <i class="fa fa-calendar"></i>
+                      2015 - 2018
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <!--==========Qualification Content 2========-->
+              <div class="qualification_content" id="work" *ngIf="edu_work">
+                <!--==========Qualification 1========-->
+                <div class="qualification__data">
+                  <div>
+                    <h3 class="qualification__title">Jr.DevOps Engineer</h3>
+                    <span class="qualification__subtitle"
+                      >ESDS Software Solution Ltd.</span
+                    >
+                    <div class="qualification__calandar">
+                      <i class="fa fa-calendar"></i>
+                      Oct 2021 - Present
+                    </div>
+                  </div>
+
+                  <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                  </div>
+                </div>
+
+                <!--==========Qualification 2========-->
+
+                <div class="qualification__data">
+                  <div></div>
+                  <div>
+                    <span class="qualification__rounder"></span>
+                    <span class="qualification__line"></span>
+                  </div>
+                  <div>
+                    <h3 class="qualification__title">Jr.Research Engineer</h3>
+                    <span class="qualification__subtitle"
+                      >ESDS Software Solution Ltd.</span
+                    >
+                    <div class="qualification__calandar">
+                      <i class="fa fa-calendar"></i>
+                      Apr 2021 - Sep 2021
+                    </div>
+                  </div>
+                </div>
+
+                <!--==========Qualification 3========-->
+
+                <div class="qualification__data">
+                  <!-- <div></div> -->
+
+                  <div>
+                    <h3 class="qualification__title">Research Trainee</h3>
+                    <span class="qualification__subtitle"
+                      >ESDS Software Solution Ltd.</span
+                    >
+                    <div class="qualification__calandar">
+                      <i class="fa fa-calendar"></i>
+                      Sep 2020 - May 2021
+                    </div>
+                  </div>
+                  <div>
+                    <span class="qualification__rounder"></span>
+                    <!-- <span class="qualification__line"></span> -->
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </div>

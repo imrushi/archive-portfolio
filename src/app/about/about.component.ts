@@ -8,9 +8,17 @@ import { Component, OnInit } from '@angular/core';
 export class AboutComponent implements OnInit {
 
   constructor() {}
-
+  edu_work:boolean = true;
   ngOnInit(): void {
+    
   }
   
+  changeE() {
+    this.edu_work = false;
+  }
+
+  changeW() {
+    this.edu_work = true;
+  }
 
 }

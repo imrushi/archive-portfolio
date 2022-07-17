@@ -1,0 +1,20 @@
+$primary: #ffdc22;
+$primary-overlay: rgba(202, 177, 63, 0.8);
+#socials {
+    img {
+      margin-top: -50px;
+    }
+  
+    .card:hover {
+      background: $primary;
+      color: #fff;
+      background-color: #f2cf43;
+      background-image: linear-gradient(315deg, #f2cf43 0%, #19a186 74%);
+      .fa {
+        color: #fff;
+      }
+      .text-pika {
+        text-shadow: 0 0 3px #333;
+      }
+    }
+  }

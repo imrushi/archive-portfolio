@@ -1,0 +1,47 @@
+#contact {
+    // min-height: 300px;
+    background-color: #485461;
+    background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+  
+    .btn-outline-warning:hover {
+      background-color: #f2cf43;
+      background-image: linear-gradient(315deg, #f2cf43 0%, #19a186 74%);
+    }
+    // img {
+    //   height: 250px;
+    // }
+    #music1 {
+      animation: float 4s ease infinite;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+    #music2 {
+      animation: float 6s ease infinite;
+      transform-origin: center;
+      transform-box: fill-box;
+    }
+    @keyframes float {
+      0% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+      }
+      50% {
+        box-shadow: 0 25px 15px 0px rgba(0, 0, 0, 0.2);
+        transform: translatey(-20px);
+      }
+      100% {
+        box-shadow: 0 5px 15px 0px rgba(0, 0, 0, 0.6);
+        transform: translatey(0px);
+      }
+    }
+    // background-color: #485461;
+    // background-image: linear-gradient(315deg, #485461 0%, #28313b 74%);
+    // background-color: #7f5a83;
+    // background-image: linear-gradient(315deg, #7f5a83 0%, #0d324d 74%);
+  
+    // background-color: #08e1ae;
+    // background-image: linear-gradient(315deg, #f2cf43 0%, #19a186 74%);
+  
+    // background-color: #08e1ae;
+    // background-image: linear-gradient(315deg, #08e1ae 0%, #98de5b 74%);
+  }

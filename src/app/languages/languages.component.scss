@@ -1,0 +1,43 @@
+$primary: #ffdc22;
+$primary-overlay: rgba(202, 177, 63, 0.8);
+#prglang {
+    .g-color-filter {
+      -webkit-filter: opacity(0.5) drop-shadow(0 0 0 rgb(4, 255, 0));
+      filter: opacity(0.5) drop-shadow(0 0 0 rgb(4, 255, 0));
+    }
+    h5 {
+      display: block;
+      font-size: 0.83em;
+      margin-block-start: 1.67em;
+      margin-block-end: 1.67em;
+      margin-inline-start: 0px;
+      margin-inline-end: 0px;
+      margin-top: 0;
+      // font-weight: bold;
+    }
+    img:hover {
+      transform: translateY(-4px);
+    }
+  
+    .card-title {
+      color: #6c757d;
+    }
+  
+    .card:hover {
+      background: $primary;
+      color: #fff;
+      background-color: #f2cf43;
+      background-image: linear-gradient(315deg, #f2cf43 0%, #19a186 74%);
+      .card-title {
+        color: #ffda22;
+        text-shadow: 0 0 3px #333;
+      }
+    }
+    .card-footer {
+      padding: 0.3rem 1.25rem;
+      // background-color: rgba(0, 0, 0, 0.03);
+      background-color: #f2cf43;
+      background-image: linear-gradient(315deg, #f2cf43 0%, #19a186 74%);
+      border-top: 1px solid rgba(0, 0, 0, 0.125);
+    }
+  }
